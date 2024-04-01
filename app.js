@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const express = require('express')
 const app = express();
-mongoose.connect("mongodb://10.0.8.217:27017/last")
+mongoose.connect("mongodb://127.0.0.1:27017/last")
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 const Post =  mongoose.model("Post",

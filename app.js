@@ -67,7 +67,7 @@ app.get('/get/:id', async(req, res) =>{
     }
 })
 app.get('/get',async (req,res)=>{
-    const myPosts = await  fetch("https://hub.dummyapis.com/employee?noofRecords=100&idStarts=1");
+    const myPosts = await  fetch("https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001");
     const reponse = await myPosts.json();
     for(let i = 0;i<reponse.length;i++){
      const data = new Post ({

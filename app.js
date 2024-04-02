@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const express = require('express')
 const app = express();
-mongoose.connect("mongodb+srv://test:test@test.1gii76f.mongodb.net/?retryWrites=true&w=majority&appName=test")
+mongoose.connect("mongodb+srv://test:test@test.ksohmcm.mongodb.net/?retryWrites=true&w=majority&appName=test")
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 const Post =  mongoose.model("Post",

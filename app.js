@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const express = require('express')
 const app = express();
-mongoose.connect("mongodb+srv://test:test@test.ksohmcm.mongodb.net/?retryWrites=true&w=majority&appName=test")
+mongoose.connect("mongodb://127.0.0.1:27017/last")
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 const Post =  mongoose.model("Post",

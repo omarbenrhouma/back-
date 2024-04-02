@@ -67,6 +67,7 @@ app.get('/get/:id', async(req, res) =>{
     }
 })
 app.get('/get',async (req,res)=>{
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
     const myPosts = await  fetch("https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001");
     const reponse = await myPosts.json();
     for(let i = 0;i<reponse.length;i++){
